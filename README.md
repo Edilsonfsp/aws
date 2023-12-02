@@ -19,7 +19,7 @@ Este projeto oferece a você uma oportunidade para demonstrar as habilidades de 
 - Armazenar informações de conexão do banco de dados no AWS Systems Manager Parameter Store
 - Oferecer escalabilidade automática que usa um modelo de execução
 ## Arquitetura atual do projeto
-![Projeto inicial!](assets/imgs/capstonestart.jpg "Arquitetura inicial do projeto")
+![Projeto inicial!](assets/capstonestart.png "Arquitetura inicial do projeto")
 # Passo a passo
 ### 1 - Criação do Application Load Balancer ( Nome: CapStone-ELB )
 > Visite o [Link da Documentação da AWS](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html "A referência para consultar como criar um load balancer.") caso seja necessário.
@@ -189,15 +189,21 @@ Este projeto oferece a você uma oportunidade para demonstrar as habilidades de 
   - Clique em connect no menu acima
   - Clique no botão laranja connect
   - Volte na janela do Projeto Capstone no Academy e clique em AWS Details
+      - ![Projeto inicial!](assets/Copiando_a_chave_1.jpg "Imagem da chave 1") 
   - Em SSH Key clique em Show e copie o texto da chave
-  - Digite o comando: ```#sudo nano labsuser.pem```
+      - ![Projeto inicial!](assets/Copiando_a_chave_2.jpg "Imagem da chave 1") 
+  - Digite o comando:
+      - ```#sudo nano labsuser.pem```
   - Botão direito colar
+      - ![Projeto inicial!](assets/nano_com_chave_1.jpg "Imagem da chave 1")  
   - Control o (letra O)
   - Enter
   - Control X
-  - Digite o comando: ```#sudo chmod 400 labsuser.pem```
+  - Digite o comando:
+      - ```#sudo chmod 400 labsuser.pem```
   - ***8.1 - Conectando na instância da aplicação***
-      - Execute o comando: ```#sudo ssh -i labsuser.pem ec2-user@10.0.4.150```
+      - Execute o comando:
+          - ```#sudo ssh -i labsuser.pem ec2-user@10.0.4.150```
       - Caso obtenha sucesso com a conexão digite yes e depois tecle enter
       - A conexão obteve sucesso?
           - não - Leia o Troubleshooting.
@@ -227,9 +233,17 @@ Este projeto oferece a você uma oportunidade para demonstrar as habilidades de 
       - Digite a senha do usuário do RDS: 12345678 ( No caso do exemplo dado neste passo a passo )
       - O prompt do mysql digite os seguintes comandos;
           - ```MySQL [(none)]> show databases;```
+              - ![Projeto inicial!](assets/prompt_mysql.jpg "Mostrar base de dados")  
           - ```MySQL [(none)]> use capstonedb;```
           - ```MySQL [capstonedb]> show tables;```
-          - ```MySQL [capstonedb]> select - from countrydata_final;```
+              - ![Projeto inicial!](assets/tabelas.jpg "Mostrar as tabelas")  
+          - ```MySQL [capstonedb]> select * from countrydata_final;```
+              - ![Projeto inicial!](assets/select.jpg "Select na tabela")  
           - ```MySQL [capstonedb]> exit;```
 > Obs: Volte para a página da aplicação e tente realizar uma consulta. A consulta foi realizada com sucesso? sim. ***Clique em submit para enviar o seu projeto e pontuar.***
-#### Obs: Obrigado por acompanhar este passo a passo. Para dúvidas e erros encontrado contate-me pelo linkedim 
+## Arquitetura final do projeto
+![Projeto inicial!](assets/capstonefinish.png "Arquitetura final do projeto")
+#### Obs: Obrigado por acompanhar este passo a passo. Para dúvidas e erros encontrados contate-me pelo linkedim
+##
+<a href="https://www.linkedin.com/in/edilsonfsp-cloud/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
